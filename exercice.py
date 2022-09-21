@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import math
-import copy
-import itertools
-
 
 def get_maximums(numbers):
     return [max(liste) for liste in numbers]
@@ -36,7 +32,10 @@ def combine_strings_and_numbers(strings, num_combinations, excluded_multiples):
 
     # return combined
 
-    return [string + str(i) for i in range(1, num_combinations + 1) if excluded_multiples is None or i % excluded_multiples != 0 for string in strings]
+    return [string + str(i)
+            for i in range(1, num_combinations + 1)
+            if excluded_multiples is None or i % excluded_multiples != 0
+            for string in strings]
 
 
 if __name__ == "__main__":
