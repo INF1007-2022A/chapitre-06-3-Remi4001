@@ -8,7 +8,7 @@ import itertools
 
 
 def get_maximums(numbers):
-	return [0]
+	return [max(liste) for liste in numbers]
 
 def join_integers(numbers):
 	return 0
