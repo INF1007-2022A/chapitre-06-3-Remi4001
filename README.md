@@ -76,7 +76,7 @@ Résultat :
 ['A1', 'B1', 'A3', 'B3', 'A5', 'B5']
 ```
 
-Notez que dans le deuxième exemple la valeur 5 est incluse et que les multiples de 2 (2 et 4) sont exclus. Notez aussi l'ordre A1 B1 puis A2 B2. On génère toutes les combinaisons pour un nombre avant de passé au prochain. On ne veut pas A1 A2 puis B1 B2.
+Notez que dans le deuxième exemple la valeur 5 est incluse et que les multiples de 2 (2 et 4) sont exclus. Notez aussi l'ordre A1 B1 puis A2 B2. On génère toutes les combinaisons pour un nombre avant de passer au prochain. On ne veut pas A1 A2 puis B1 B2.
 
 ## Conseils et ressources
 
