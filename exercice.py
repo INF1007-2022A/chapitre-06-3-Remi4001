@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 import math
 import copy
 import itertools
@@ -16,7 +15,15 @@ def join_integers(numbers):
 
 
 def generate_prime_numbers(limit):
-    return [0]
+    premiers = []
+    nombres = [i for i in range(2, limit + 1)]
+
+    while nombres != []:
+        premiers.append(nombres[0])
+
+        nombres = [i for i in nombres if i % nombres[0] != 0]
+
+    return premiers
 
 
 def combine_strings_and_numbers(strings, num_combinations, excluded_multiples):
