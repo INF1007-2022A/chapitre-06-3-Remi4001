@@ -27,7 +27,16 @@ def generate_prime_numbers(limit):
 
 
 def combine_strings_and_numbers(strings, num_combinations, excluded_multiples):
-    return [""]
+    # combined = []
+
+    # for i in range(1, num_combinations + 1):
+    #     if excluded_multiples is None or i % excluded_multiples != 0:
+    #         for string in strings:
+    #             combined.append(string + str(i))
+
+    # return combined
+
+    return [string + str(i) for i in range(1, num_combinations) if excluded_multiples is None or i % excluded_multiples != 0 for string in strings]
 
 
 if __name__ == "__main__":
